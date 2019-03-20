@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<title></title>
+		<style type="text/css">
+			#div2{
+				width: 200px;
+				height: 400px;
+				float: left;
+				background-color: red;
+			}
+			#div3{
+				width: 400px;
+				height: 400px;
+				background-color: blue;
+				float: left;
+				display: none;
+			}
+			#div2:hover + #div3{
+				display: block;
+			}
+			#div3:hover{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div2"></div>
+		<div id="div3"></div>
+	</body>
+</html>
