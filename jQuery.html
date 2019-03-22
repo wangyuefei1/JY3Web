@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div2{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				display: none;
+			}
+		</style>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+            <img src="加号.svg"/ id="img1">
+            <div id="div2"></div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#img1").click(function(){
+				$("#div2").toggle(100);
+			})
+		})
+	</script>
+</html>
