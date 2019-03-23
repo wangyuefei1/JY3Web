@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">		
+		<title></title>
+		<style type="text/css">
+			
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width:100%;
+				height: 100%;
+				position: fixed;
+			}
+			#cont{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+			#sign{
+				width: 100%;
+				height: 30px;
+				background-color: #000000;
+			}
+			#title{
+				width: 100%;
+				height: 50px;
+				background-color: grey;	
+  				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				/*margin-left: 5px;*/
+			}
+			
+			#sign{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#leftsign ul li{
+				width: 7px ;
+				height: 7px;
+				border-radius: 50%;
+				border: 1px solid white;
+				margin-left: 2px;
+			}
+			#leftsign ul{
+				list-style: none;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center
+			}
+			#leftsign{
+				flex: 0.3;
+				display: flex;
+			}
+			#leftsign span{
+				color: white;
+				font-size: 11px;
+			}
+			#leftsign img{
+				width: 18px ;
+				height: 18px;
+			}
+			#centersign{
+				flex: 0.4;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#centersign span{
+				color: white;
+				font-size: 14px;
+			}
+			#rightsign img{
+				width: 20px;
+				height: 20px;
+			}
+			.class1{
+				background-color: white;
+			}
+			#rightsign{
+				flex: 0.3;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin-right: 2px;
+			}
+			#rightsign span{
+				font-size: 14px;
+				color: white;
+			}
+			#menu{
+				width: 100%;
+				height: 60px;
+				background-color: gainsboro;
+				display: flex;
+			}
+			#lefttitle{
+				flex: 0.8;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			#lefttitle span{
+				color: white;
+				margin-left: 7px;
+			}
+			#righttitle{
+				flex: 0.2;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#righttitle img{
+				width: 20px;
+				height: 20px;
+			}
+			#centertitle{
+				flex: 0.1;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin-right: 2px;
+			}
+			#centertitle img{
+				width: 20px;
+				height: 20px;
+			}
+		    #menu1 img{
+		    	width: 40px;
+		    	height: 40px;
+		    }
+		    #menu1{
+		    	width: 100%;
+		    	display: flex;
+		    	/*justify-content: center;*/
+				/*align-items: center;*/
+		     	margin-bottom:3px ;  	
+		    }
+		    #leftmenu1{
+		    	flex: 0.1;
+		    	display: flex;
+		      	align-items: center;
+		      	justify-content: center;
+		    }
+		    #leftmenu2{
+		    	flex: 0.55;
+		    	display: flex;
+		    	justify-content: center;
+		      	align-items: center;
+		    }
+		    #rightmenu1{
+		    	flex: 0.2;
+		    	display: flex;
+		    	justify-content: flex-start;
+		      	align-items: center;
+		    }
+		    #rightmenu2{
+		    	flex: 0.15;
+		    	display: flex;
+		    	justify-content: flex-start;
+		      	align-items: center;
+		    }
+		  	input[type="text"]{
+		    	width: 184px;
+		    	height: 30px;
+		    }
+		    #content{
+		    	flex: 1;
+		    	overflow: scroll;
+		    }
+		    #title img{
+		    	width: 30px;
+		    	height: 30px;
+		    }
+		    #content .onecontent{
+		    	width: 95%;
+		    	height: 50px;
+		    	display: flex;
+		    	margin-left: 5px;
+		    }
+		    #leftcontent{
+		    	flex: 0.1;
+		    	height: 100%;
+		    	display: flex;
+		    	margin-top:7px;
+		    }
+		    #centercontent{
+		     	flex: 0.9;
+		     	height: 100%;
+		     	display: flex;
+		     	justify-content: flex-start;
+		     	align-items: center;
+		    }
+		    #centercontent #yuyin{
+		    	width: 120px;
+		    	height: 30px;
+		    	background-color: greenyellow;
+                margin-left: 7px; 
+  				border-radius: 3px;
+  				text-indent: 10px;
+		    }
+		    #leftcontent img{
+		    	width: 35px;
+		    	height: 35px;
+		    }
+		    #yuyin img{
+		    	width: 30px;
+		    	height:30px ;
+		    }
+		    #content #twocontent{
+		    	display: flex;
+		    	justify-content: center;
+		    	align-items: center;
+		    	height: 50px;
+		    }
+		    #twocontent #time{
+		    	width: 40px;
+		    	height: 20px;
+		    	background-color: gainsboro;
+		    }
+		    #centercontent2{
+		    	flex: 0.9;
+		    	display: flex;
+		    	justify-content: flex-end;
+		    	align-content: center;
+		    	margin-right: 7px;
+		    }
+		    #yuyin2 img{
+		    	width: 41px;
+		    	height:27px ;
+		    }
+		    #centercontent2 #yuyin2{
+		    	width: 80px;
+		    	height: 30px;
+		    	background-color: greenyellow;
+		    	text-indent: 45px;
+		    }
+		    #rightcontent2{
+		    	flex: 0.1;
+		    	display: flex;
+		    	justify-content: flex-end;
+		    	align-content: center;
+		    }
+		     #content .threecontent{
+		    	width: 95%;
+		    	height: 50px;
+		    	display: flex;
+		    	margin-right: 5px;
+		    }
+		    #rightcontent2 img{
+		    	width: 30px;
+		    	height:30px ;
+		    }
+		</style>
+	</head>
+	<body>
+		<div id="cont">
+			<div id="sign">
+				<div id="leftsign">
+					<ul>
+						<li class="class1"></li>
+						<li class="class1"></li>
+						<li class="class1"></li>
+						<li></li>
+					</ul>
+					<span>中国联通</span>
+					<div >
+						<img src="WIFI 我fi.svg"/>
+					</div>
+				</div>
+				<div id="centersign">
+					<span >18：27</span>
+				</div>
+				<div id="rightsign">
+					<div id="suo">
+						<img src="锁.svg"/ >
+					</div>
+					<span>100%</span>
+					<img src="电量.svg"/>
+				</div>
+			</div>
+			<div id="title">
+				<div id="lefttitle">
+					<img src="返 回.svg"/>
+					<span>妈</span>
+				</div>
+				<div id="righttitle">
+					<div id="tu">	
+						<img src="省略号.svg"/>	
+					</div>
+				</div>
+			</div>
+			<div id="content">
+				
+				<div class="onecontent">
+					<div id="leftcontent">
+						<img src="QQ截图20190323114929.png"/> 
+					</div>
+					<div id="centercontent">
+					    <div id="yuyin">
+					    	<img src="语音 (2).svg"/>
+					    </div>   
+					</div>
+			  	</div>
+			  	
+			  	<div id="twocontent">
+			  		<div id="time">
+			  			<span>15:41</span>
+			  		</div>
+			  	</div>
+			  	
+			  	<div class="threecontent">
+					<div id="centercontent2">
+						<div id="yuyin2">
+					    	<img src="语音 (3).svg"/>
+					    </div>  
+					</div>
+					<div id="rightcontent2">
+						<img src="QQ截图20190323155606.png"/>  
+					</div>
+			  	</div>
+			  	
+			  	<div class="threecontent">
+					<div id="centercontent2">
+						<div id="yuyin2">
+					    	<img src="语音 (3).svg"/>
+					    </div>  
+					</div>
+					<div id="rightcontent2">
+						<img src="QQ截图20190323155606.png"/>  
+					</div>
+			  	</div>
+			  	
+			  	<div class="threecontent">
+					<div id="centercontent2">
+						<div id="yuyin2">
+					    	<img src="语音 (3).svg"/>
+					    </div>  
+					</div>
+					<div id="rightcontent2">
+						<img src="QQ截图20190323155606.png"/>  
+					</div>
+			  	</div>
+			  	
+			  	<div class="threecontent">
+					<div id="centercontent2">
+						<div id="yuyin2">
+					    	<img src="语音 (3).svg"/>
+					    </div>  
+					</div>
+					<div id="rightcontent2">
+						<img src="QQ截图20190323155606.png"/>  
+					</div>
+			  	</div>
+			  	
+			  	<div id="twocontent">
+			  		<div id="time">
+			  			<span>16:41</span>
+			  		</div>
+			  	</div>
+			  	
+			  	<div class="onecontent">
+					<div id="leftcontent">
+						<img src="QQ截图20190323114929.png"/> 
+					</div>
+					<div id="centercontent">
+					    <div id="yuyin">
+					    	<img src="语音 (2).svg"/>
+					    </div>   
+					</div>
+			  	</div>
+			  	
+			  	<div class="onecontent">
+					<div id="leftcontent">
+						<img src="QQ截图20190323114929.png"/> 
+					</div>
+					<div id="centercontent">
+					    <div id="yuyin">
+					    	<img src="语音 (2).svg"/>
+					    </div>   
+					</div>
+			  	</div>
+			  	
+			  	<div class="threecontent">
+					<div id="centercontent2">
+						<div id="yuyin2">
+					    	<img src="语音 (3).svg"/>
+					    </div>  
+					</div>
+					<div id="rightcontent2">
+						<img src="QQ截图20190323155606.png"/>  
+					</div>
+			  	</div>
+			  	
+			  	<div class="threecontent">
+					<div id="centercontent2">
+						<div id="yuyin2">
+					    	<img src="语音 (3).svg"/>
+					    </div>  
+					</div>
+					<div id="rightcontent2">
+						<img src="QQ截图20190323155606.png"/>  
+					</div>
+			  	</div>
+			  	
+			  	<div class="threecontent">
+					<div id="centercontent2">
+						<div id="yuyin2">
+					    	<img src="语音 (3).svg"/>
+					    </div>  
+					</div>
+					<div id="rightcontent2">
+						<img src="QQ截图20190323155606.png"/>  
+					</div>
+			  	</div>
+			  	
+			 </div> 	
+			<div id="menu">
+				<div id="menu">
+				<div id="menu1">
+					<div id="leftmenu1">
+						<img src="语音.svg"/ >
+					</div>
+					<div id="leftmenu2">
+						<input type="text" name="" id="" value="" />
+					</div>
+					<div id="rightmenu1">
+						<img src="表情.svg"/>
+					</div>
+					<div id="rightmenu2">
+						<img src="加 (1).svg"/>
+					</div>
+				</div>
+				</div>
+			</div>
+	</body>
+</html>
