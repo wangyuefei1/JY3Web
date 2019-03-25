@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width:100%;
+				height: 100%;
+				position: fixed;
+			}
+			#cont{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+			#sign{
+				width: 100%;
+				height: 30px;
+				background-color: #000000;
+			}
+			#title{
+				width: 100%;
+				height: 50px;
+				background-color: grey;	
+  				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				/*margin-left: 5px;*/
+			}
+			#content{
+			/*	display: flex;*/
+				flex: 1;
+				/*justify-content: center;*/	
+				margin-left:5px ;
+				overflow: scroll;
+			}
+			
+			#sign{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#leftsign ul li{
+				width: 7px ;
+				height: 7px;
+				border-radius: 50%;
+				border: 1px solid white;
+				margin-left: 2px;
+			}
+			#leftsign ul{
+				list-style: none;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center
+			}
+			#leftsign{
+				flex: 0.3;
+				display: flex;
+			}
+			#leftsign span{
+				color: white;
+				font-size: 11px;
+			}
+			#leftsign img{
+				width: 18px ;
+				height: 18px;
+			}
+			#centersign{
+				flex: 0.4;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#centersign span{
+				color: white;
+				font-size: 14px;
+			}
+			#rightsign img{
+				width: 20px;
+				height: 20px;
+			}
+			.class1{
+				background-color: white;
+			}
+			#rightsign{
+				flex: 0.3;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin-right: 2px;
+			}
+			#rightsign span{
+				font-size: 14px;
+				color: white;
+			}
+			#menu{
+				width: 100%;
+				height: 60px;
+				background-color: gainsboro;
+				display: flex;
+			}
+			#lefttitle{
+				flex: 0.8;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			#lefttitle span{
+				color: white;
+				margin-left: 7px;
+			}
+			#righttitle{
+				flex: 0.1;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			#righttitle img{
+				width: 20px;
+				height: 20px;
+			}
+			#centertitle{
+				flex: 0.1;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin-right: 2px;
+			}
+			#centertitle img{
+				width: 20px;
+				height: 20px;
+			}
+		    #menu1 img{
+		    	width: 40px;
+		    	height: 40px;
+		    }
+		    #menu1{
+		    	width: 100%;
+		    	display: flex;
+		    	/*justify-content: center;*/
+				/*align-items: center;*/
+		     	margin-bottom:3px ;  	
+		    }
+		    #leftmenu1{
+		    	flex: 0.25;
+		    	display: flex;
+		    	flex-direction: column;
+		      	align-items: center;
+		    }
+		    #leftmenu2{
+		    	flex: 0.25;
+		    	display: flex;
+		    	flex-direction: column;
+		      	align-items: center;
+		    }
+		    #rightmenu1{
+		    	flex: 0.25;
+		    	display: flex;
+		    	flex-direction: column;
+		      	align-items: center;
+		    }
+		    #rightmenu2{
+		    	flex: 0.25;
+		    	display: flex;
+		    	flex-direction: column;
+		      	align-items: center;
+		    }
+		    #content .twocontent{
+		    	display: flex;
+		    	width: 90%;
+		    	height:50px;
+		    	border-bottom: 1px solid gainsboro;
+		    }
+		    #leftcontent1{
+		    	flex: 0.2;
+		    	display: flex;
+		    	justify-content: center;
+		    	align-items: center;
+		    }
+		    #centercontent1{
+		    	flex: 0.8;
+		    	display: flex;
+		    	align-items: center;
+		    }
+		    #leftcontent1 img{
+		    	width: 35px;
+		    	height: 35px;
+		    }
+		    #content #kong{
+		    	width: 100%;
+		    	height: 20px;
+		    	background-color: gainsboro;
+		    }
+		</style>
+	</head>
+	<body>
+		<div id="cont">
+			<div id="sign">
+				<div id="leftsign">
+					<ul>
+						<li class="class1"></li>
+						<li class="class1"></li>
+						<li class="class1"></li>
+						<li></li>
+					</ul>
+					<span>中国联通</span>
+					<div >
+						<img src="WIFI 我fi.svg"/>
+					</div>
+				</div>
+				<div id="centersign">
+					<span >18：27</span>
+				</div>
+				<div id="rightsign">
+					<div id="suo">
+						<img src="锁.svg"/ >
+					</div>
+					<span>100%</span>
+					<img src="电量.svg"/>
+				</div>
+			</div>
+			<div id="title">
+				<div id="lefttitle">
+					<span>微信</span>
+				</div>
+				<div id="righttitle">
+					<div id="tu">	
+						<img src="搜索 (2).svg"/>	
+					</div>
+				</div>
+				<div id="centertitle">
+					<div >
+						<img id="tu1" src="加.svg"/>
+					</div>
+				</div>
+			</div>
+			<div id="content">
+				
+				<div id="kong"></div>
+				
+				<div class="twocontent">
+					<div id="leftcontent1">
+						<img src="微信朋友圈.svg"/>
+					</div>
+					<div id="centercontent1">
+						<span>朋友圈</span>
+					</div>
+				</div>
+				
+				<div id="kong"></div>
+				
+				<div class="twocontent">
+					<div id="leftcontent1">
+						<img src="扫一扫.svg"/>
+					</div>
+					<div id="centercontent1">
+						<span>扫一扫</span>
+					</div>
+				</div>
+			
+				<div class="twocontent">
+					<div id="leftcontent1">
+						<img src="摇一摇.svg"/>
+					</div>
+					<div id="centercontent1">
+						<span>摇一摇</span>
+					</div>
+				</div>
+				
+				<div id="kong"></div>
+				
+				<div class="twocontent">
+					<div id="leftcontent1">
+						<img src="看一看.svg"/>
+					</div>
+					<div id="centercontent1">
+						<span>看一看</span>
+					</div>
+				</div>
+				
+				<div class="twocontent">
+					<div id="leftcontent1">
+						<img src="搜一搜.svg"/>
+					</div>
+					<div id="centercontent1">
+						<span>搜一搜</span>
+					</div>
+				</div>
+				
+				<div id="kong"></div>
+				
+				<div class="twocontent">
+					<div id="leftcontent1">
+						<img src="附近的人.svg"/>
+					</div>
+					<div id="centercontent1">
+						<span>附近的人</span>
+					</div>
+				</div>
+				
+				<div class="twocontent">
+					<div id="leftcontent1">
+						<img src="漂流瓶.svg"/>
+					</div>
+					<div id="centercontent1">
+						<span>漂流瓶</span>
+					</div>
+				</div>
+				
+				<div id="kong"></div>
+				
+				<div class="twocontent">
+					<div id="leftcontent1">
+						<img src="购物.svg"/>
+					</div>
+					<div id="centercontent1">
+						<span>购物</span>
+					</div>
+				</div>
+				
+				<div class="twocontent">
+					<div id="leftcontent1">
+						<img src="游戏.svg"/>
+					</div>
+					<div id="centercontent1">
+						<span>游戏</span>
+					</div>
+				</div>
+			</div>
+			<div id="menu">
+				<div id="menu1">
+					<div id="leftmenu1">
+						<img src="45-微信-消息 (1).svg"/ >
+						<!--<br />-->
+						<span id="">微信</span>
+					</div>
+					<div id="leftmenu2">
+						<img src="通讯录 (1).svg"/>
+						<a href="D:\新建文件夹\微信通讯录" target="tongxunlu">通讯录</a>
+					</div>
+					<div id="rightmenu1">
+						<img src="发现 (1).svg"/>
+						<span id="">发现</span>
+					</div>
+					<div id="rightmenu2">
+						<img src="我 (1).svg"/>
+						<span id="">我</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
