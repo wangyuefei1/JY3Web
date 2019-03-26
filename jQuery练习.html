@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="div2">
+			<h1>什么是jQuery？</h1>
+		</div> 	
+		<div id="div3">
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#div2").click(function(){
+				$("h1").css("background-color","red");
+				$("#div3").html("<p>解答：</p><p>jQuery是一个JavaScript库</p><p>jQuery极大地简化了JavaScript编程</p><p>jQuery很容易学习</p>")
+			})
+		})
+	</script>
+</html>
