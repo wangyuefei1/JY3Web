@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/bottom.css"/>
+		<link rel="stylesheet" type="text/css" href="css/电子书.css"/>
+		<link rel="stylesheet" type="text/css" href="css/热门书籍.css"/>
+		<style type="text/css">
+			@-webkit-keyframes myaction{
+				0%{
+					background-color: orange;
+					
+				}
+				100%{
+					background-color: red;	
+				}
+			}
+			.sub1{
+				animation: myaction 2s linear infinite;
+				transition-delay: 0.5s;
+			}
+			
+			.sub2{
+				animation: myaction 2s linear infinite;
+				transition-delay: 0.5s;
+			}
+			.sub3{
+				animation: myaction 2s linear infinite;
+				transition-delay: 0.5s;
+			}
+			.sub4{
+				animation: myaction 2s linear infinite;
+				transition-delay: 0.5s;
+			}
+			#bottom {
+				margin-top:35px ;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="contenter">
+			<div id="dianzi1">
+				<div class="dian1">
+					<div class="sub1">
+						<a href="#">新</a>
+					</div>
+				</div>
+				<div class="dian2">
+					<div class="sub2">
+						<a href="#">书</a>
+					</div>
+				</div>
+				<div class="dian3">
+					<div class="sub3">
+						<a href="#">推</a>
+					</div>
+				</div>
+				<div class="dian4">
+					<div class="sub4">
+						<a href="#">荐</a>
+					</div>
+				</div>
+			</div>
+			<div id="dianzi2">
+				<div class="leftdian">
+					 <button  id="bt1" type="button">书单</button>
+				
+					<div id="caidan">
+						<a href="#"><p>生活</p></a>
+						<a href="#"><p>儿童</p></a>
+						<a href="#"><p>文艺</p></a>
+						<a href="#"><p>小说</p></a>
+						<a href="#"><p>历史</p></a>
+						<a href="#"><p>经济</p></a>
+						<a href="#"><p>爱情</p></a>
+					</div>
+					
+				</div>
+				<div class="rightdian">
+					<div class="remen3">
+						<div id="left1">
+							<img src="http://img62.ddimg.cn/digital/product/69/69/1900556969_ii_cover.jpg?version=52420743-da9d-44bf-965a-2bd46581d8cf"/>
+							<span>阳台上</span>
+							<span class="miaosha">￥：9.9 </span>
+						</div>
+						<div id="right1">
+							<img src="http://img62.ddimg.cn/digital/product/39/78/1901113978_ii_cover.jpg?version=9d3daa4a-bedb-430c-94bf-7f3ca3b1d192"/>
+							<span>掌握情绪</span>
+							<span class="miaosha">￥:  19.9</span>
+						</div>
+					</div>
+					<div id="kong">
+						
+					</div>
+					<div class="remen3">
+						<div id="left1">
+							<img src="http://img60.ddimg.cn/digital/product/29/0/1901112900_ii_cover.jpg?version=c4bb8753-916d-4c08-af55-910d06cbfe20"/>
+							<span>掌控关系</span>
+							<span class="miaosha">￥：34.8 </span>
+						</div>
+						<div id="right1">
+							<img src="http://img62.ddimg.cn/digital/product/46/37/1901104637_ii_cover.jpg?version=0afdccc6-cdd0-46ac-9dd3-0f57fd584093"/>
+							<span>三体全集</span>
+							<span class="miaosha">￥:  34.99</span>
+						</div>
+					</div>
+					<div id="kong">
+					</div>
+					<div class="remen3">
+						<div id="left1">
+							<img src="http://img60.ddimg.cn/digital/product/38/55/1901113855_ii_cover.jpg?version=126d955a-00c8-41e0-ae15-f0f2eff99727"/>
+							<span>农场</span>
+							<span class="miaosha">￥：17.9 </span>
+						</div>
+						<div id="right1">
+							<img src="http://img62.ddimg.cn/digital/product/23/96/1901112396_ii_cover.jpg?version=e2c03b61-3c71-44e1-8860-b654d88f8e83"/>
+							<span>老中医</span>
+							<span class="miaosha">￥:  8.9</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="dianzi3">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					  </ol>
+					
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img id="tu1" src="http://img60.ddimg.cn/picc/xsdxjd-675-240gai.jpg" >
+					    </div>
+					    <div class="item">
+					      <img id="tu1" src="http://img63.ddimg.cn/ddreader/1212tp/shyw675x240.jpg" alt="...">
+					    </div>
+					    <div class="item">
+					      <img id="tu1" src="http://img61.ddimg.cn/ddreader/2017bd/rmwx-675-240new.jpg" alt="...">
+					    </div>
+					  </div>
+					
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+			</div>		
+		</div>
+			<div id="dianzi4">
+				<div id="leftfoot">
+					<div id="foot">大家都在读</div>
+				</div>
+				<div id="rightfoot">
+					<ul>
+						<li><a href="">墨菲定律&nbsp &nbsp &nbsp &nbsp  ￥：6.6</a></li>
+						<li><a href="">东野硅谷：悲剧人偶&nbsp &nbsp &nbsp &nbsp &nbsp
+							 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+							  &nbsp &nbsp &nbsp ￥：16.6</a></li>
+						<li><a href="">人类简史新版￥：18.8</a></li>
+						<li><a href="">吕思勉文集&nbsp&nbsp&nbsp&nbsp￥：28.8</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="bottom">
+				<span id="span3">		网站简介		网站联盟 		联系我们			关于我们</span>
+			</div>	
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#bt1").click(function(){
+				$("#caidan").toggle(100);
+			})
+			
+		})
+	</script>
+</html>
